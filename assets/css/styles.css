@@ -32,6 +32,10 @@ body {
     --line-clamp: 2;
 }
 
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
 .btn {
     display: inline-block;
     min-width: 118px;
@@ -546,4 +550,21 @@ a {
     min-width: 137px;
     color: #fff;
     background: var(--primary-color);
+}
+
+.features-2nd {
+    margin-top: 70px;
+}
+
+.features-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+    width: 49%;
+}
+
+.features-2nd .images img {
+    width: 470px;
+    height: 440px;
 }
