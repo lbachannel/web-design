@@ -15,27 +15,54 @@
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <header class="header fixed">
         <div class="main-content">
-                <div class="body">
-                    <!-- Logo -->
-                    <img src="./assets/img/logo.svg" alt="Lesson." class="logo">
-                    <!-- Nav -->
-                    <nav class="nav">
-                        <ul>
-                            <li class="active"><a href="#!">Home</a></li>
-                            <li><a href="#!">Courses</a></li>
-                            <li><a href="#!">Pricing</a></li>
-                            <li><a href="#!">Reviews</a></li>
-                        </ul>
-                    </nav>
-                    <!-- Action -->
-                    <div class="action">
-                        <a href="#!" class="btn sign-up-btn">Sign Up</a>
-                    </div>
+            <div class="body">
+                <!-- Tablet/mobile menu -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </label>
+                <!-- Logo -->
+                <img src="./assets/img/logo.svg" alt="Lesson." class="logo">
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul>
+                        <li class="active"><a href="#!">Home</a></li>
+                        <li><a href="#!">Courses</a></li>
+                        <li><a href="#!">Pricing</a></li>
+                        <li><a href="#!">Reviews</a></li>
+                    </ul>
+                </nav>
+                <!-- Action -->
+                <div class="action">
+                    <a href="#!" class="btn sign-up-btn">Sign Up</a>
                 </div>
+            </div>
+        </div>
+    </header>
+    <!-- Tablet/mobile header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="#!">
+                <img src="./assets/img/logo.svg" alt="Lesson." class="logo">
+            </a>
+            <!-- Navigation -->
+            <ul>
+                <li class="active"><a href="#!">Home</a></li>
+                <li><a href="#!">Courses</a></li>
+                <li><a href="#!">Pricing</a></li>
+                <li><a href="#!">Reviews</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -45,7 +72,7 @@
                 <div class="body">
                     <!-- Hero left -->
                     <div class="media-block">
-                        <img src="./assets/img/hero-img.jpg"Learn without limits and spread knowledge." class="img">
+                        <img src="./assets/img/hero-img.jpg" alt="Learn without limits and spread knowledge." class="img">
                         <div class="hero-summary">
                             <div class="item">
                                 <div class="icon">
@@ -281,8 +308,8 @@
             <div class="main-content">
                 <div class="body">
                     <div class="images">
-                        <img src="./assets/img/feature-1.jpg" alt="Learner outcomes through our awesome platform" class="lower">
-                        <img src="./assets/img/feature-2.jpg" alt="Learner outcomes through our awesome platform">
+                        <img src="./assets/img/feature-1.jpg" alt="Learner outcomes through our awesome platform" class="lower feature1-img">
+                        <img src="./assets/img/feature-2.jpg" alt="Learner outcomes through our awesome platform" class="feature1-img">
                     </div>
                     <div class="content">
                         <h2 class="heading line-clamp line-3">Learner outcomes through our awesome platform</h2>
@@ -299,7 +326,7 @@
             <div class="main-content">
                 <div class="body">
                     <div class="images">
-                        <img src="./assets/img/feature-3.jpg" alt="Take the next step toward your personal and professional goals with Lesson.">
+                        <img src="./assets/img/feature-3.jpg" alt="Take the next step toward your personal and professional goals with Lesson." class="feature2-img">
                     </div>
                     <div class="content">
                         <h2 class="heading line-clamp line-3">Take the next step toward your personal and professional goals with Lesson.</h2>

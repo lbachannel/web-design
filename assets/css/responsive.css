@@ -1,0 +1,146 @@
+/* PC */
+@media screen and (min-width: 1400px) {
+    .mobile-header {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .hero .heading {
+        font-size: 5.7rem;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    .mobile-header {
+        display: none;
+    }
+
+    .hero .heading {
+        font-size: 4.8rem;
+    }
+
+    .hero .content-block {
+        padding: 64px 0 0 80px;
+    }
+
+    .hero .hero-summary {
+        right: -37px;
+    }
+
+    .features .images .feature1-img {
+        width: 255px;
+        height: 389px;
+    }
+
+    .features .body {
+        gap: 0 20px;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    .body {
+        position: relative;
+    }
+    .body .logo {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .nav ul {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity, visibility, 0.25s;
+    }
+
+    .menu-drawer {
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: transform, 0.25s;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        color: #333;
+        display: block;
+        padding: 14px;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .media-block {
+        display: none;
+    }
+
+    .hero .content-block {
+        width: 100%;
+        padding: 30px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .popular .course-list {
+        gap: 20px;
+    }
+
+    .features .images {
+        display: flex;
+        gap: 0 20px;
+    }
+
+    .features .images .feature1-img {
+        width: 250px;
+        height: 384px;
+    }
+
+    .features .images img {
+        width: 420px;
+        height: 390px;
+    }
+
+    .features .heading {
+        font-size: 3.5rem;
+    }
+
+    .blog .blog-list {
+        gap: 20px;
+    }
+
+    .footer {
+        padding: 96px 50px 0px;
+    }
+}
