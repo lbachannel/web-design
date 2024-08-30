@@ -148,8 +148,27 @@
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
+    .header .sign-up-btn {
+        min-width: 115px;
+        line-height: 50px;
+    }
+
+    .hero-cta {
+        min-width: 140px;
+        line-height: 50px;
+    }
+
     .hero .heading {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+
+    .hero .watch-video span {
+        font-size: 1.6rem;
+    }
+
+    .hero .watch-video .icon {
+        width: 30px;
+        height: 30px;
     }
 
     .popular {
@@ -167,7 +186,11 @@
     }
 
     .feedback-item blockquote {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .blog .blog-top .desc {
+        width: inherit;
     }
 
     .features .body {
@@ -209,6 +232,10 @@
         margin-right: -20px;
     }
 
+    .hero .stats strong {
+        font-size: 3.4rem;
+    }
+
     .footer {
         padding: 70px 5px 0px;
     }
@@ -223,14 +250,5 @@
 
     .footer .row .column .heading {
         margin-top: 50px;
-    }
-}
-
-@media screen and (max-width: 575.98px) {
-    .features .images {
-        gap: 0 5px;
-    }
-    .blog .item {
-        width: calc(100% - 20px);
     }
 }
