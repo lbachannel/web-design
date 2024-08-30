@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* remove tap highlight on mobile */
 }
 
 :root {
@@ -55,6 +56,27 @@ body {
 
 a {
     text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+a, label, img, button, input, textarea, select {
+    outline: none;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit; /* remove default styling of tag a when displayed on mobile */
+}
+
+input, textarea {
+    background: transparent;
 }
 
 .main-content {

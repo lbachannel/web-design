@@ -171,6 +171,10 @@
         height: 30px;
     }
 
+    .hero .desc {
+        font-size: 1.6rem;
+    }
+
     .popular {
         margin-top: 50px;
     }
@@ -198,7 +202,7 @@
     }
 
     .features .images .feature1-img {
-        width: 50%;
+        width: 100%;
     }
 
     .features .images .feature2-img {
@@ -212,8 +216,10 @@
     }
 
     .features .images {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         width: 100%;
-        gap: 0 15px;
     }
 
     .features-2nd {
@@ -225,7 +231,7 @@
     }
 
     .blog .item {
-        width: calc(50% - 20px);
+        width: calc(100% - 20px);
     }
 
     .blog .blog-list {
